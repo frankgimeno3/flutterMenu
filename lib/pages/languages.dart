@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-class LoginPage extends StatelessWidget {
+class LanguagesPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Login'),
+        title: Text('Languages'),
       ),
       body: Container(
         color: Colors.grey,
@@ -13,7 +13,7 @@ class LoginPage extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-              Text('Login', style: TextStyle(fontSize: 24, color: Colors.white)),
+              Text('Languages Page', style: TextStyle(fontSize: 24, color: Colors.white)),
               ElevatedButton(
                 onPressed: () => Navigator.pop(context),
                 child: Text('Go Back'),

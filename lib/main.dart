@@ -71,7 +71,22 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
           side: BorderSide(color: Colors.white),
         ),
-        onPressed: () {},
+        onPressed: () {
+          switch (title) {
+            case 'Login':
+              Navigator.push(context, MaterialPageRoute(builder: (context) => LoginPage()));
+              break;
+            case 'Signup':
+              Navigator.push(context, MaterialPageRoute(builder: (context) => SignupPage()));
+              break;
+            case 'About Us':
+              Navigator.push(context, MaterialPageRoute(builder: (context) => AboutUsPage()));
+              break;
+            case 'Languages':
+              Navigator.push(context, MaterialPageRoute(builder: (context) => LanguagesPage()));
+              break;
+          }
+        },
         child: Text(title),
       ),
     );
